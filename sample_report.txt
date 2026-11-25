@@ -1,0 +1,70 @@
+TakeoverCheck Report
+====================
+
+Subdomain: www.acme-lab.test
+  Chain:   www.acme-lab.test
+  Final A: 93.184.216.34
+  Dangling: no
+  Rating:  CLEAR — Resolves normally; no dangling record found.
+
+Subdomain: blog.acme-lab.test
+  Chain:   blog.acme-lab.test -> acme-blog.github.io
+  Final:   NXDOMAIN
+  Dangling: YES
+  Fingerprint: github-pages (HTTP 404)
+  Rating:  HIGH — Dangling CNAME whose target matches the github-pages error page — the name can be claimed.
+
+Subdomain: shop.acme-lab.test
+  Chain:   shop.acme-lab.test -> acme-shop.herokuapp.com
+  Final:   NXDOMAIN
+  Dangling: YES
+  Fingerprint: heroku (HTTP 404)
+  Rating:  HIGH — Dangling CNAME whose target matches the heroku error page — the name can be claimed.
+
+Subdomain: files.acme-lab.test
+  Chain:   files.acme-lab.test -> acme-files.s3.amazonaws.com
+  Final:   NXDOMAIN
+  Dangling: YES
+  Fingerprint: aws-s3 (HTTP 404)
+  Rating:  HIGH — Dangling CNAME whose target matches the aws-s3 error page — the name can be claimed.
+
+Subdomain: old.acme-lab.test
+  Chain:   old.acme-lab.test -> old-deleted.azurewebsites.net
+  Final:   NXDOMAIN
+  Dangling: YES
+  Fingerprint: azure (HTTP 404)
+  Rating:  HIGH — Dangling CNAME whose target matches the azure error page — the name can be claimed.
+
+Subdomain: dev.acme-lab.test
+  Chain:   dev.acme-lab.test -> dev2.acme-lab.test
+  Final A: 10.0.0.5
+  Dangling: no
+  Rating:  CLEAR — Resolves normally; no dangling record found.
+
+Subdomain: api.acme-lab.test
+  Chain:   api.acme-lab.test
+  Final A: 93.184.216.34
+  Dangling: no
+  Rating:  CLEAR — Resolves normally; no dangling record found.
+
+Subdomain: docs.acme-lab.test
+  Chain:   docs.acme-lab.test -> docs-app.netlify.app
+  Final:   NXDOMAIN
+  Dangling: YES
+  Fingerprint: netlify (HTTP 404)
+  Rating:  HIGH — Dangling CNAME whose target matches the netlify error page — the name can be claimed.
+
+Subdomain: staging.acme-lab.test
+  Chain:   staging.acme-lab.test -> staging-gone.example.net
+  Final:   NXDOMAIN
+  Dangling: YES
+  Fingerprint: none (HTTP 404)
+  Rating:  MEDIUM — Dangling CNAME, but no provider fingerprint matched — verify the target manually.
+
+Subdomain: mail.acme-lab.test
+  Chain:   mail.acme-lab.test
+  Final A: 93.184.216.34
+  Dangling: no
+  Rating:  CLEAR — Resolves normally; no dangling record found.
+
+Summary: 5 high, 1 medium, 4 clear (of 10)

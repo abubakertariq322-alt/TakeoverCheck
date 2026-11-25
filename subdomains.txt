@@ -1,0 +1,12 @@
+# TakeoverCheck lab list — 10 subdomains of acme-lab.test (our own lab zone)
+# Expected: 5 high, 1 medium, 4 clear
+www.acme-lab.test
+blog.acme-lab.test
+shop.acme-lab.test
+files.acme-lab.test
+old.acme-lab.test
+dev.acme-lab.test
+api.acme-lab.test
+docs.acme-lab.test
+staging.acme-lab.test
+mail.acme-lab.test

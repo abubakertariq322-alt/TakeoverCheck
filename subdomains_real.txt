@@ -1,0 +1,4 @@
+# Real (public, read-only) names — for the Step 1 real-DNS test only.
+# These are well-known live domains, not targets. No claiming, no probing.
+example.com
+www.example.com

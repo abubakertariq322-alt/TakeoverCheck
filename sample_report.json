@@ -1,0 +1,157 @@
+[
+  {
+    "subdomain": "www.acme-lab.test",
+    "chain": [
+      "www.acme-lab.test"
+    ],
+    "final_target": "www.acme-lab.test",
+    "final_error": null,
+    "final_a": [
+      "93.184.216.34"
+    ],
+    "dangling": false,
+    "http_status": null,
+    "fingerprint": null,
+    "rating": "clear",
+    "reason": "Resolves normally; no dangling record found."
+  },
+  {
+    "subdomain": "blog.acme-lab.test",
+    "chain": [
+      "blog.acme-lab.test",
+      "acme-blog.github.io"
+    ],
+    "final_target": "acme-blog.github.io",
+    "final_error": "NXDOMAIN",
+    "final_a": [],
+    "dangling": true,
+    "http_status": 404,
+    "fingerprint": "github-pages",
+    "rating": "high",
+    "reason": "Dangling CNAME whose target matches the github-pages error page \u2014 the name can be claimed."
+  },
+  {
+    "subdomain": "shop.acme-lab.test",
+    "chain": [
+      "shop.acme-lab.test",
+      "acme-shop.herokuapp.com"
+    ],
+    "final_target": "acme-shop.herokuapp.com",
+    "final_error": "NXDOMAIN",
+    "final_a": [],
+    "dangling": true,
+    "http_status": 404,
+    "fingerprint": "heroku",
+    "rating": "high",
+    "reason": "Dangling CNAME whose target matches the heroku error page \u2014 the name can be claimed."
+  },
+  {
+    "subdomain": "files.acme-lab.test",
+    "chain": [
+      "files.acme-lab.test",
+      "acme-files.s3.amazonaws.com"
+    ],
+    "final_target": "acme-files.s3.amazonaws.com",
+    "final_error": "NXDOMAIN",
+    "final_a": [],
+    "dangling": true,
+    "http_status": 404,
+    "fingerprint": "aws-s3",
+    "rating": "high",
+    "reason": "Dangling CNAME whose target matches the aws-s3 error page \u2014 the name can be claimed."
+  },
+  {
+    "subdomain": "old.acme-lab.test",
+    "chain": [
+      "old.acme-lab.test",
+      "old-deleted.azurewebsites.net"
+    ],
+    "final_target": "old-deleted.azurewebsites.net",
+    "final_error": "NXDOMAIN",
+    "final_a": [],
+    "dangling": true,
+    "http_status": 404,
+    "fingerprint": "azure",
+    "rating": "high",
+    "reason": "Dangling CNAME whose target matches the azure error page \u2014 the name can be claimed."
+  },
+  {
+    "subdomain": "dev.acme-lab.test",
+    "chain": [
+      "dev.acme-lab.test",
+      "dev2.acme-lab.test"
+    ],
+    "final_target": "dev2.acme-lab.test",
+    "final_error": null,
+    "final_a": [
+      "10.0.0.5"
+    ],
+    "dangling": false,
+    "http_status": null,
+    "fingerprint": null,
+    "rating": "clear",
+    "reason": "Resolves normally; no dangling record found."
+  },
+  {
+    "subdomain": "api.acme-lab.test",
+    "chain": [
+      "api.acme-lab.test"
+    ],
+    "final_target": "api.acme-lab.test",
+    "final_error": null,
+    "final_a": [
+      "93.184.216.34"
+    ],
+    "dangling": false,
+    "http_status": null,
+    "fingerprint": null,
+    "rating": "clear",
+    "reason": "Resolves normally; no dangling record found."
+  },
+  {
+    "subdomain": "docs.acme-lab.test",
+    "chain": [
+      "docs.acme-lab.test",
+      "docs-app.netlify.app"
+    ],
+    "final_target": "docs-app.netlify.app",
+    "final_error": "NXDOMAIN",
+    "final_a": [],
+    "dangling": true,
+    "http_status": 404,
+    "fingerprint": "netlify",
+    "rating": "high",
+    "reason": "Dangling CNAME whose target matches the netlify error page \u2014 the name can be claimed."
+  },
+  {
+    "subdomain": "staging.acme-lab.test",
+    "chain": [
+      "staging.acme-lab.test",
+      "staging-gone.example.net"
+    ],
+    "final_target": "staging-gone.example.net",
+    "final_error": "NXDOMAIN",
+    "final_a": [],
+    "dangling": true,
+    "http_status": 404,
+    "fingerprint": null,
+    "rating": "medium",
+    "reason": "Dangling CNAME, but no provider fingerprint matched \u2014 verify the target manually."
+  },
+  {
+    "subdomain": "mail.acme-lab.test",
+    "chain": [
+      "mail.acme-lab.test"
+    ],
+    "final_target": "mail.acme-lab.test",
+    "final_error": null,
+    "final_a": [
+      "93.184.216.34"
+    ],
+    "dangling": false,
+    "http_status": null,
+    "fingerprint": null,
+    "rating": "clear",
+    "reason": "Resolves normally; no dangling record found."
+  }
+]
